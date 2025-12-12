@@ -107,6 +107,16 @@ body {
         max-height: 400px;
     }
 }
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* CLASS UNTUK MEMANGGIL ANIMASI */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out forwards;
+}
 @keyframes fadeInOut {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
@@ -385,4 +395,20 @@ body {
     background: #fff;
     color: #3b0a52;
 }
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #390e9d;
+}
+
+.footer-text {
+  margin-bottom: 6px;
+}
+
+.footer-sub {
+  font-size: 13px;
+  color: #350a44;
+}
+
 
